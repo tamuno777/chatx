@@ -61,7 +61,7 @@ export default function Chatsection(setIsloggedin,friend) {
 
 
   return (
-    <div>
+    <div className='d-flex jusify-content-center'>
          <div className="chat-room cha-container con "  >
          <Link  className='button2  ' onClick={signuserout}>
              sign out
