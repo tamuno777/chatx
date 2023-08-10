@@ -34,30 +34,11 @@ function App() {
   return (
     <>
 
-      {/* {friend ? ( */}
             <Chatapp friend={friend}  setIsloggedin={setIsloggedin} />
 
-      {/* ) : (
-
-     <div className="active-friends  py-2 px-3" >
-        
      
-        <div className="d-flex">
-        <div className="InputContainer">
-             <input ref = {FriendInputRef} placeholder="Search.." id="input" className="input" name="text" type="text"/>
      
-          </div >
-          <button
-          className="px-2  border ms-1"
-          style={{borderRadius:"10px"}}
-               //  get current value of inpute field from ref ans set room
-                onClick={() => setFriend(FriendInputRef.current.value) }
-               >
-                 Enter
-               </button>
-        </div>     
-         </div>
-               )} */}
+       
 
    
 
