@@ -61,20 +61,17 @@ export default function Chatsection(setIsloggedin,friend) {
 
 
   return (
-    <div className='d-flex jusify-content-center'>
-         <div className="chat-room cha-container con "  >
+    <div className='d-flex mt-5 justify-content-center bg-dark con'>
+         <div className="card"  >
          <Link  className='button2  ' onClick={signuserout}>
              sign out
              {/* <input type="hidden" value={Friend} name="Friend" /> */}
      
      
              </Link>
-                <div className="nav-bar">
+                <div className="nav-bar bg-secondary">
                     <p>chatroom</p>
-                    <div className="close">
-                        <div className="line one"></div>
-                        <div className="line two"></div>
-                    </div>
+                    
                 </div>
                 <div className="messages-area text-white">
 
@@ -93,21 +90,20 @@ export default function Chatsection(setIsloggedin,friend) {
 
                             ))} 
                     </div>
-                    <div className="message two">
-
-                    </div>
+                   
                     
 
 
-                    <div className="sender-area ">
-                        <div className="input-place mx-5">
+                    <div className="sender-area  d-flex">
+                        <div className="input-place m-1">
                             <input placeholder="Send a message." className="send-input" value={newMessage}
           onChange={(event) => setNewMessage(event.target.value)}
            type="text"/>
-                            <div className="send">
+                            
+                        </div>
+                        <div className="send">
                                 <button type='submit' onClick={onSubmitmessage}   className="send-icon btn"><BiSolidSend/></button>
                             </div>
-                        </div>
                     </div>
 
 
