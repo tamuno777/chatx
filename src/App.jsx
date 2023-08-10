@@ -8,7 +8,6 @@ import './App.css'
 import Login from './Homepage/login'
 import Routers from './Router'
 import Logout from './Logout/logout'
-// import Chatapp from './Chatapp/chatapp'
 
 
 const cookies = new Cookies()
@@ -20,14 +19,12 @@ function App() {
 
   const FriendInputRef = useRef()
 
-  // const isActive = location.pathname
 
  
   if (!isLogedin){
     return (
       <>
         
-          {/* log in page */}
           <Login setIsloggedin={setIsloggedin}/>
         
       </>
