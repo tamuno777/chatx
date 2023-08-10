@@ -79,9 +79,9 @@ export default function Chatsection(setIsloggedin,friend) {
                         {allmessages.map((message) => (
                             <div 
                             key={message.id} 
-                            className="message one ">
+                            className="message one text-dark">
 
-                                <span className="user " >
+                                <span className="user me-2 " >
                                   <img style={{width:"20px"}} src={message.userPic} alt="" />:
                                   </span>
                                    {message.text}
